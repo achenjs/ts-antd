@@ -6,7 +6,9 @@ class Header extends React.Component<{}, {}> {
   render () {
     return (
       <div className="common-header">
-        header
+        <div className="header-left">
+          test
+        </div>
       </div>
     )
   }

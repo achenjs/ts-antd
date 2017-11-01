@@ -1,5 +1,9 @@
 .common-header {
   width: 100%;
-  height: 46px;
+  height: 0.92rem;
   background-color: #f0f0f0;
+  .header-left {
+    width: 1.6rem;
+    background-color: #000000;
+  }
 }
