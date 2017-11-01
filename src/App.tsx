@@ -1,24 +1,29 @@
 import * as React from 'react';
-import './App.css';
-import { Button } from 'antd-mobile';
+export interface State { 
+  initLoading: boolean; 
+}
+class App extends React.Component<{}, State> {
+  interval: number;
+  state = {
+    initLoading: false
+  };
 
-class App extends React.Component {
-  constructor (props: {}, context: {}) {
-    super(props, context);
-    this.state = {
-      initLoading: [false]
-    };
+  componentWillMount() {
+    this.interval = window.setInterval(() => {
+      this.setState({ 
+        initLoading: true 
+      });
+    }, 1000);
   }
-  onPanelChange = (value?: {}, mode?: {}) => {
-    console.log(value, mode);
-  }
+
   render() {
-    // const { initLoading } = this.props;
+    const { initLoading } = this.state;
     return (
       <div className="App">
-        <Button>111</Button>
         {
+          initLoading ?
           this.props.children
+          : <div>正在加载中...</div>
         }
       </div>
     );

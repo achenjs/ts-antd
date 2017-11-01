@@ -1,7 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
-import './index.css';
 import 'antd-mobile/dist/antd-mobile.css';
 // import { Provider } from 'react-redux';
 import RouteMap from './router';

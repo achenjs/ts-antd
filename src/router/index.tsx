@@ -11,7 +11,7 @@ class RouteMap extends React.Component {
           component={(props: {}) => (
           <App {...props}>
             <Switch>
-              <Route exact={true} path="/home" component={Home} />
+              <Route exact={true} path="/" component={Home} />
             </Switch>
           </App>
         )}
