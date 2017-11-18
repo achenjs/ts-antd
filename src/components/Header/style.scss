@@ -6,6 +6,7 @@
   .header-city {
     width: 1.6rem;
     text-align: center;
+    line-height: 0.58rem;
     span {
       vertical-align: middle;
     }
@@ -19,8 +20,11 @@
     .search-container {
       background: #ffffff;
       overflow: hidden;
+      height: 0.58rem;
       input {
-        width: 80%;
+        width: 90%;
+        height: 0.56rem;
+        line-height:0.56rem;
       }
       .icon-search {
         vertical-align: middle;
@@ -30,6 +34,7 @@
   .header-user {
     width: 0.94rem;
     text-align: center;
+    line-height: 0.58rem;
     .icon-user {
       display: inline-block;
       width: 0.37rem;
